@@ -24,20 +24,43 @@
 // console.log(greeting);
 
 // BOOLEANS
-const a = 4;
-const b = 53;
-const c = 57;
-const d = 16;
-const e = 'Kevin';
+// const a = 4;
+// const b = 53;
+// const c = 57;
+// const d = 16;
+// const e = 'Kevin';
 
-console.log(a != b);
-console.log(c != d);
-console.log('Name' == 'Name');
+// console.log(a != b);
+// console.log(c != d);
+// console.log('Name' == 'Name');
 //FOR THE NEXT TWO, USE ONLY && OR ||
-console.log(true || false);
-console.log(false && false && false || true);
-console.log(false == false);
-console.log(e == 'Kevin');
-console.log(a < b != c);
-console.log(a == a != d);
-console.log(48 == '48');
+// console.log(true || false);
+// console.log(false && false && false || true);
+// console.log(false == false);
+// console.log(e == 'Kevin');
+// console.log(a < b != c);
+// console.log(a == a != d);
+// console.log(48 == '48');
+
+//The farm
+// if the animal is a cow print mooo
+// if the animal is not a cow print "Hey! You're not a cow."
+
+// let animal = "cow";
+
+// if (animal === "cat"){
+//     console.log("mooooo");
+// } else {
+//     console.log("Hey! You're not a cow.");
+// }
+
+
+//E DRIVERS ED
+
+let personAge = 27;
+
+if (personAge >= 16){
+    console.log("Here are the keys!");
+} else {
+    console.log("Sorry, you're too young.");
+}

@@ -13,3 +13,12 @@
 // 6. what percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
 // you should spend over half the time planning (over 60%), the time should be spent in solving the actual coding should take less time. 
 
+// B STRINGS
+let firstVariable = "Hello World";
+firstVariable = 32;
+let secondVariable = firstVariable;
+secondVariable = "Nice!"
+console.log(firstVariable);
+let yourName = "Danielle";
+let greeting = `Hello, my name is ${yourName}`;
+console.log(greeting);

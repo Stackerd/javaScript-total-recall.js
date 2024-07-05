@@ -14,11 +14,30 @@
 // you should spend over half the time planning (over 60%), the time should be spent in solving the actual coding should take less time. 
 
 // B STRINGS
-let firstVariable = "Hello World";
-firstVariable = 32;
-let secondVariable = firstVariable;
-secondVariable = "Nice!"
-console.log(firstVariable);
-let yourName = "Danielle";
-let greeting = `Hello, my name is ${yourName}`;
-console.log(greeting);
+// let firstVariable = "Hello World";
+// firstVariable = 32;
+// let secondVariable = firstVariable;
+// secondVariable = "Nice!"
+// console.log(firstVariable);
+// let yourName = "Danielle";
+// let greeting = `Hello, my name is ${yourName}`;
+// console.log(greeting);
+
+// BOOLEANS
+const a = 4;
+const b = 53;
+const c = 57;
+const d = 16;
+const e = 'Kevin';
+
+console.log(a != b);
+console.log(c != d);
+console.log('Name' == 'Name');
+//FOR THE NEXT TWO, USE ONLY && OR ||
+console.log(true || false);
+console.log(false && false && false || true);
+console.log(false == false);
+console.log(e == 'Kevin');
+console.log(a < b != c);
+console.log(a == a != d);
+console.log(48 == '48');

@@ -161,22 +161,39 @@ for (i = 0; i <= 100; i++) {
 
 //E Mix it up
 //1.
-const myArray = [5, 10, 500, 20]
-myArray.push("Aegon");
-console.log(myArray);
+// const myArray = [5, 10, 500, 20]
+// myArray.push("Aegon");
+// console.log(myArray);
 //2. 
-myArray.shift(0)
-console.log(myArray);
+// myArray.shift(0)
+// console.log(myArray);
 //3.
-myArray.unshift("Bob Marley");
-console.log(myArray);
+// myArray.unshift("Bob Marley");
+// console.log(myArray);
 //4.
-myArray.pop(4);
-console.log(myArray);
+// myArray.pop(4);
+// console.log(myArray);
 //5. 
-const myArrayReversed = myArray.reverse();
-console.log(myArray);
+// const myArrayReversed = myArray.reverse();
+// console.log(myArray);
 //Did you mutate the array?
 // yes, mutate means to change the array and the order of the array was changed. 
 //did the reverse method return anything?
 // yes, it returned the array in reversed order.
+
+//F Biggie smalls
+// let num = 10;
+// if (num <= 100) {
+//     console.log("Little number");
+// }else{
+//     console.log("Big number");
+// }
+//G. MONKEY IN THE MIDDLE
+let num1 = 11;
+if (num1 < 5) {
+    console.log("Little number");
+}else if (num1 > 10){
+    console.log("Big number");
+}else {
+    console.log("Monkey");
+}

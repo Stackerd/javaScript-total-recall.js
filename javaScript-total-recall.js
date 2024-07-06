@@ -114,7 +114,7 @@ for (i = 0; i <= 100; i++) {
 
 }
 
-console.log(bank_account)
+// console.log(bank_account)
 
 // Arrays & Control flow
 
@@ -136,25 +136,47 @@ console.log(bank_account)
 
 // C. Accessing elements
 
-const randomThings = [1, 10, "Hello", true]
+// const randomThings = [1, 10, "Hello", true]
 //1.
-console.log(randomThings[0]);
+// console.log(randomThings[0]);
 //2.
-randomThings[2] = 'world'
-console.log(randomThings[2]);
+// randomThings[2] = 'world'
+// console.log(randomThings[2]);
 // 
-console.log(randomThings)
+// console.log(randomThings)
 //the array did update: the string "Hello" was changed to "World"
 
 //D Change values
 
-const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github",]
+// const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github",]
 
 //1. what would you write to access the 3rd element of the array?
 
-console.log(ourClass[2])
+// console.log(ourClass[2])
 //2. Change the value of "github" to "Octocat"
-ourClass[4] = "Octocat";
-console.log(ourClass);
-ourClass.push("Cloud City")
-console.log(ourClass)
+// ourClass[4] = "Octocat";
+// console.log(ourClass);
+// ourClass.push("Cloud City")
+// console.log(ourClass)
+
+//E Mix it up
+//1.
+const myArray = [5, 10, 500, 20]
+myArray.push("Aegon");
+console.log(myArray);
+//2. 
+myArray.shift(0)
+console.log(myArray);
+//3.
+myArray.unshift("Bob Marley");
+console.log(myArray);
+//4.
+myArray.pop(4);
+console.log(myArray);
+//5. 
+const myArrayReversed = myArray.reverse();
+console.log(myArray);
+//Did you mutate the array?
+// yes, mutate means to change the array and the order of the array was changed. 
+//did the reverse method return anything?
+// yes, it returned the array in reversed order.

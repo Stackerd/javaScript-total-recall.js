@@ -57,10 +57,51 @@
 
 //E DRIVERS ED
 
-let personAge = 27;
+// let personAge = 27;
 
-if (personAge >= 16){
-    console.log("Here are the keys!");
-} else {
-    console.log("Sorry, you're too young.");
+// if (personAge >= 16){
+//     console.log("Here are the keys!");
+// } else {
+//     console.log("Sorry, you're too young.");
+// }
+//II. LOOPS
+// 1. The basics
+for (let i = 0; i < 11; i++) {
+    console.log(i)
+}
+//2. 
+for (let i = 10; i < 401; i++) {
+    console.log(i)
+}
+// 3.
+for (let i = 12; i < 4001; i += 3) {
+    console.log(i)
+}
+// Get even
+
+for (let a = 2; a < 100; a += 2) {
+    console.log(a + "is an even number")
+}
+// Give me Five
+
+// 1.
+//  if i multiple of three
+for (let i = 0; i < 101; i++) {
+    if (i % 3 === 0) {
+        console.log(`I found a ${i}. three is a crowd!`)
+        //  2.   if i is a multiple of 5
+        if (i % 5 === 0) {
+            console.log(`I found a ${i}. High five!`)
+
+        }
+    }
+}
+
+// D Savings account
+
+let bank_account = 0;
+
+for (i = 0; i <= 10; i++) {
+    bank_account += i;
+    console.log(bank_account);
 }

@@ -66,42 +66,95 @@
 // }
 //II. LOOPS
 // 1. The basics
-for (let i = 0; i < 11; i++) {
-    console.log(i)
-}
+// for (let i = 0; i < 11; i++) {
+//     console.log(i)
+// }
 //2. 
-for (let i = 10; i < 401; i++) {
-    console.log(i)
-}
+// for (let i = 10; i < 401; i++) {
+//     console.log(i)
+// }
 // 3.
-for (let i = 12; i < 4001; i += 3) {
-    console.log(i)
-}
+// for (let i = 12; i < 4001; i += 3) {
+//     console.log(i)
+// }
 // Get even
 
-for (let a = 2; a < 100; a += 2) {
-    console.log(a + "is an even number")
-}
+// for (let a = 2; a < 100; a += 2) {
+//     console.log(a + "is an even number")
+// }
 // Give me Five
 
 // 1.
 //  if i multiple of three
-for (let i = 0; i < 101; i++) {
-    if (i % 3 === 0) {
-        console.log(`I found a ${i}. three is a crowd!`)
-        //  2.   if i is a multiple of 5
-        if (i % 5 === 0) {
-            console.log(`I found a ${i}. High five!`)
+// for (let i = 0; i < 101; i++) {
+//     if (i % 3 === 0) {
+//         console.log(`I found a ${i}. three is a crowd!`)
+//         //  2.   if i is a multiple of 5
+//         if (i % 5 === 0) {
+//             console.log(`I found a ${i}. High five!`)
 
-        }
-    }
-}
+//         }
+//     }
+// }
 
 // D Savings account
 
 let bank_account = 0;
 
 for (i = 0; i <= 10; i++) {
+
     bank_account += i;
-    console.log(bank_account);
+
+
 }
+for (i = 0; i <= 100; i++) {
+
+    bank_account += i * 2;
+
+
+}
+
+console.log(bank_account)
+
+// Arrays & Control flow
+
+//A. Talk about it
+
+//1. What are the things in an array called?
+//  the things in an array are called an element or items
+
+//2. Do arrays guarantee those things will be in order?
+//  yes
+
+//3. What real life thing could you model with an array?
+// Colors for a project
+
+// B. Easy does it
+
+// let quotes = ['Now or never', 'Nurture your best', 'Do it now'];
+// console.log(quotes)
+
+// C. Accessing elements
+
+const randomThings = [1, 10, "Hello", true]
+//1.
+console.log(randomThings[0]);
+//2.
+randomThings[2] = 'world'
+console.log(randomThings[2]);
+// 
+console.log(randomThings)
+//the array did update: the string "Hello" was changed to "World"
+
+//D Change values
+
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github",]
+
+//1. what would you write to access the 3rd element of the array?
+
+console.log(ourClass[2])
+//2. Change the value of "github" to "Octocat"
+ourClass[4] = "Octocat";
+console.log(ourClass);
+ourClass.push("Cloud City")
+console.log(ourClass)

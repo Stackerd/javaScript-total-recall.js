@@ -276,34 +276,106 @@
 //B printCool
 
 // const printCool = (agrument) => {
-//     return  agrument + " " + "is cool";
+// return  agrument + " " + "is cool";
 // };
 // console.log(printCool("Captian Reynolds"));
 
-//C calculateCube
+// C calculateCube
 
 // function calculateCube(number) {
-//     return number * number * number;
+// return number * number * number;
 // }
 
 // console.log(calculateCube(5));
 
 //D. isVowel
 
-function isVowel(charater) {
-    charater = charater.toLowerCase();
+// function isVowel(charater) {
+//     charater = charater.toLowerCase();
 
 
-    if (charater === 'a' || charater === 'e' || charater === 'i' || charater === 'o' || charater === 'u') {
-        return true;
-    } else {
-        return false;
-    }
+//     if (charater === 'a' || charater === 'e' || charater === 'i' || charater === 'o' || charater === 'u') {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(isVowel('a'));
+// console.log(isVowel('b'));
+// console.log(isVowel('c'));
+// console.log(isVowel('d'));
+// console.log(isVowel('E'));
+
+// E getTwoLengths
+
+function getTwoLengths(str1, str2) {
+    return [str1.length, str2.length];
 }
-console.log(isVowel('a'));
-console.log(isVowel('b'));
-console.log(isVowel('c'));
-console.log(isVowel('d'));
-console.log(isVowel('E'));
+// console.log(getTwoLengths('Hank', 'Hippopopalous'));
 
 
+//F getMultipleLengths
+// function getMultipleLengths(strings) {
+//     return strings.map(function(str){
+//         return str.length;
+//     })
+
+//     }
+//     console.log(getMultipleLengths(['Hello', 'what', 'is', 'up', 'dude']));
+
+function maxOfThree(num1, num2, num3) {
+    if (num1 >= num2 && num1 >= num3) {
+        return num1;
+    } else if (num2 >= num1 && num2 >= num3) {
+        return num2;
+    } else {
+        return num3;
+    }
+
+
+}
+// console.log(maxOfThree(3,9,4));
+
+//H. printLongestWord
+
+function printLongestWord(words) {
+    let longestWord = "";
+
+    for (let i = 0; i < words.length; i++) {
+        if (words[i].length > longestWord.length) {
+            longestWord = words[i];
+        }
+    }
+return longestWord
+}
+console.log(printLongestWord(['BoJack', 'Princess', 'Diane', 'a', 'Max', 'Peanutbutter', 'big', 'Todd']));
+
+
+// Objects
+// A. Make a user object
+
+let user = {
+name: 'Danielle',
+email: 'danid@example.com',
+age: 27,
+purchased: []
+
+};
+
+//B. Update the user
+user.email(newemail@example.com)
+
+//C. Adding keys and values
+
+// D. Shopaholic
+
+//E. Oject-within-object
+
+//F. Loops
+
+//G. Functions can operate on objects
+
+//Cat Combinator
+//1. Mama cat
+//2. Papa cat
+//3. Combine Cats!

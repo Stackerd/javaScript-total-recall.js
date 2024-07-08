@@ -99,20 +99,20 @@
 
 // D Savings account
 
-let bank_account = 0;
+// let bank_account = 0;
 
-for (i = 0; i <= 10; i++) {
+// for (i = 0; i <= 10; i++) {
 
-    bank_account += i;
-
-
-}
-for (i = 0; i <= 100; i++) {
-
-    bank_account += i * 2;
+//     bank_account += i;
 
 
-}
+// }
+// for (i = 0; i <= 100; i++) {
+
+//     bank_account += i * 2;
+
+
+// }
 
 // console.log(bank_account)
 
@@ -153,6 +153,7 @@ for (i = 0; i <= 100; i++) {
 //1. what would you write to access the 3rd element of the array?
 
 // console.log(ourClass[2])
+
 //2. Change the value of "github" to "Octocat"
 // ourClass[4] = "Octocat";
 // console.log(ourClass);
@@ -164,7 +165,7 @@ for (i = 0; i <= 100; i++) {
 // const myArray = [5, 10, 500, 20]
 // myArray.push("Aegon");
 // console.log(myArray);
-//2. 
+//2.
 // myArray.shift(0)
 // console.log(myArray);
 //3.
@@ -173,11 +174,11 @@ for (i = 0; i <= 100; i++) {
 //4.
 // myArray.pop(4);
 // console.log(myArray);
-//5. 
+//5.
 // const myArrayReversed = myArray.reverse();
 // console.log(myArray);
 //Did you mutate the array?
-// yes, mutate means to change the array and the order of the array was changed. 
+// yes, mutate means to change the array and the order of the array was changed.
 //did the reverse method return anything?
 // yes, it returned the array in reversed order.
 
@@ -189,11 +190,85 @@ for (i = 0; i <= 100; i++) {
 //     console.log("Big number");
 // }
 //G. MONKEY IN THE MIDDLE
-let num1 = 11;
-if (num1 < 5) {
-    console.log("Little number");
-}else if (num1 > 10){
-    console.log("Big number");
-}else {
-    console.log("Monkey");
-}
+// let num1 = 11;
+// if (num1 < 5) {
+//     console.log("Little number");
+// } else if (num1 > 10) {
+//     console.log("Big number");
+// } else {
+//     console.log("Monkey");
+// }
+
+//H. What's in your closet
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+    [
+        // These are Thom's shirts
+        "grey button-up",
+        "dark grey button-up",
+        "light blue button-up",
+        "blue button-up",
+    ], [
+        // These are Thom's pants
+        "grey jeans",
+        "jeans",
+        "PJs"
+    ], [
+        // Thom's accessories
+        "wool mittens",
+        "wool scarf",
+        "raybans"
+    ]
+];
+
+//1.What's Kristyn wearing today?
+//  Using bracket notation to access items in kristynsCloset,
+//  log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
+
+
+console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!")
+
+
+//2.Kristyn just bought some sweet shades! Add "raybans" to her closet after "yellow knit hat".
+
+kristynsCloset.splice(6, 0, "raybans")
+console.log(kristynsCloset);
+
+//3.Kristyn spilled coffee on her hat... modify this item to read "stained knit hat" instead of yellow.
+
+kristynsCloset.splice(5, 1, "stained knit hat")
+console.log(kristynsCloset);
+
+//4. Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirtsarray.
+
+console.log(thomsCloset[0][0]);
+
+//5. In the same way, access one item from Thom's pants array.
+
+console.log(thomsCloset[1][0]);
+
+//6. Access one item from Thom's accessories array.
+
+console.log(thomsCloset[2][2]);
+
+//7. Log a sentence about what Thom's wearing. Example: "Thom is looking fierce in a grey button-up, jeans and wool scarf!
+
+console.log("Thom is looking fierce in a " + thomsCloset[0][0] + "," + " " + thomsCloset[1][0] + " " + "and" + " " + thomsCloset[2][2] + "!");
+
+//8. Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
+//need help could not figure this one out
+
+thomsCloset.splice(2, 0);
+console.log(thomsCloset);
+

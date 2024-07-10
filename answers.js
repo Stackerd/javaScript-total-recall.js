@@ -54,14 +54,54 @@
 
 // Yell at the Ninja Turtles
 
-const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+// const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
-for (const turtle of ninjaTurtles) {
-    console.log(turtle.toUpperCase());
-}
+// for (const turtle of ninjaTurtles) {
+//     console.log(turtle.toUpperCase());
+// }
 
 
 // Methods, Revisited
+
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'HarryPotter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+console.log(favMovies.indexOf('Titanic'));
+
+favMovies.sort();
+console.log(favMovies);
+
+favMovies.pop();
+console.log(favMovies);
+
+favMovies.push("Guardians of the Galaxy");
+console.log(favMovies);
+
+favMovies.reverse();
+console.log(favMovies);
+
+favMovies.shift();
+console.log(favMovies);
+
+favMovies.unshift("New Movie");
+console.log(favMovies);
+
+const djangoIndex = favMovies.indexOf("Django Unchained");
+if (djangoIndex !== -1) {
+    favMovies.splice(djangoIndex, 1, "Avatar");
+}
+console.log(favMovies);
+
+const middleIndex = Math.floor(favMovies.length / 2);
+const lastHalf = favMovies.slice(middleIndex);
+console.log(lastHalf);
+
+const slicedArray = lastHalf;
+console.log(slicedArray);
+
+console.log(favMovies);
+
+console.log(favMovies.indexOf("Fast and Furious")); 
+
 
 // Where is Waldo
 

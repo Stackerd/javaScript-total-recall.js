@@ -311,17 +311,17 @@
 function getTwoLengths(str1, str2) {
     return [str1.length, str2.length];
 }
-// console.log(getTwoLengths('Hank', 'Hippopopalous'));
+console.log(getTwoLengths('Hank', 'Hippopopalous'));
 
 
-//F getMultipleLengths
-// function getMultipleLengths(strings) {
-//     return strings.map(function(str){
-//         return str.length;
-//     })
+// F getMultipleLengths
+function getMultipleLengths(strings) {
+    return strings.map(function(str){
+        return str.length;
+    })
 
-//     }
-//     console.log(getMultipleLengths(['Hello', 'what', 'is', 'up', 'dude']));
+    }
+    console.log(getMultipleLengths(['Hello', 'what', 'is', 'up', 'dude']));
 
 function maxOfThree(num1, num2, num3) {
     if (num1 >= num2 && num1 >= num3) {
@@ -334,7 +334,7 @@ function maxOfThree(num1, num2, num3) {
 
 
 }
-// console.log(maxOfThree(3,9,4));
+console.log(maxOfThree(3,9,4));
 
 //H. printLongestWord
 

@@ -6,9 +6,15 @@
 
 //Get Even
 
+// for (let i = 0; i <= 200; i += 2) {
+//     console.log(i);
+// }
 
 // Fizz Buzz
 
+for (let i = 0; i <= 200; i += 2) {
+    console.log(i);
+}
 
 
 //Wild Wild Life

@@ -119,18 +119,30 @@
 //  Excited Kitten
 
 
-for (let i = 1; i <= 20; i++) {
-    console.log("Love me, pet me! HSSSSSSS!");
+// for (let i = 1; i <= 20; i++) {
+//     console.log("Love me, pet me! HSSSSSSS!");
 
-    if (i % 2 === 0) {
-        const randomMessages = [
-            "...human...why you taking pictures of me?...",
-            "...the catnip made me do it...",
-            "...why does the red dot always get away..."
-        ];
+//     if (i % 2 === 0) {
+//         const randomMessages = [
+//             "...human...why you taking pictures of me?...",
+//             "...the catnip made me do it...",
+//             "...why does the red dot always get away..."
+//         ];
 
-        const randomIndex = Math.floor(Math.random() * randomMessages.length);
-        console.log(randomMessages[randomIndex]);
-    }
-}
+//         const randomIndex = Math.floor(Math.random() * randomMessages.length);
+//         console.log(randomMessages[randomIndex]);
+//     }
+// }
 //  Find the Median
+const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12, 17, 12, 71, 18, 15, 12];
+nums.sort((a, b) => a - b);
+
+const middleIndex = Math.floor(nums.length / 2);
+let median;
+if (nums.length % 2 === 0) {
+    median = (nums[middleIndex - 1] + nums[middleIndex]) / 2;
+} else {
+    median = nums[middleIndex];
+}
+
+console.log(median)
